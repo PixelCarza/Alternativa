@@ -1,58 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-
     <title>Alternativa Ferragens & CIA</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <section class="conteudo-site">
+<header>
+    <div class="cabecalho">
+        <img src="logo.jpg"
+             alt="Logo Alternativa Ferragens"
+             class="logo">
 
-        <header>
-            <div class="cabecalho">
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#isobre">Sobre nós</a></li>
+                <li><a href="#iprodutos">Produtos</a></li>
+                <li><a href="#ilocalizacao">Localização</a></li>
+                <li><a href="#icontato">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-                
-                <img
-                    src="logo.jpg"
-                    alt="Logo Alternativa Ferragens"
-                    class="logo"
-                >
-
-                <!-- MENU -->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#isobre">Sobre nós</a>
-                        </li>
-
-                        <li>
-                            <a href="#iprodutos">Produtos</a>
-                        </li>
-
-                        <li>
-                            <a href="#ilocalizacao">Localização</a>
-                        </li>
-
-                        <li>
-                            <a href="#icontato">Fale Conosco</a>
-                        </li>
-                    </ul>
-                </nav>
-
-            </div>
-        </header>
-
-        <main class="grid-principal">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.6547116904035!2d-47.3952934250649!3d-22.366662918790205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8776ad5414e8d%3A0x44922bf6a53967a1!2sAlternativa%20Ferragens%20-%20Araras!5e0!3m2!1spt-BR!2sbr!4v1793927745231!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </main>
+<main>
+    <section class="inicio">
+        <h1>Alternativa Ferragens & CIA</h1>
+        <p>
+            Conheça nossa empresa, nossos produtos
+            e onde nos encontrar.
+        </p>
+        <a href="#iprodutos" class="botao">
+            Conheça nossos produtos
+        </a>
     </section>
+
+    <section id="isobre" class="secao">
+        <h2>Sobre nós</h2>
+        <p>
+            Bem-vindo ao site da Alternativa Ferragens & CIA!
+            Aqui você poderá conhecer nossa empresa,
+            consultar produtos e encontrar nossos
+            canais de atendimento.
+        </p>
+    </section>
+
+    <section id="iprodutos" class="secao produtos">
+        <h2>Nossos produtos</h2>
+        <p>Conheça algumas categorias do nosso catálogo.</p>
+
+        <div class="grade-produtos">
+            <article class="produto">
+                <span aria-hidden="true">🔩</span>
+                <h3>Ferragens</h3>
+                <p>Categoria em desenvolvimento.</p>
+            </article>
+
+            <article class="produto">
+                <span aria-hidden="true">🛠️</span>
+                <h3>Ferramentas</h3>
+                <p>Categoria em desenvolvimento.</p>
+            </article>
+
+            <article class="produto">
+                <span aria-hidden="true">🔧</span>
+                <h3>Acessórios</h3>
+                <p>Categoria em desenvolvimento.</p>
+            </article>
+        </div>
+    </section>
+
+    
+<section id="ilocalizacao" class="secao">
+    <h2>Nossa localização</h2>
+    <p>Venha conhecer a Alternativa Ferragens & CIA!</p>
+
+    <div class="mapa">
+        <iframe
+            title="Localização da Alternativa Ferragens"
+            src="https://www.google.com/maps?q=Alternativa%20Ferragens%20Araras%20SP&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <a class="botao"
+       href="https://www.google.com/maps/search/?api=1&query=Alternativa%20Ferragens%20Araras%20SP"
+       target="_blank"
+       rel="noopener noreferrer">
+        Ver no Google Maps
+    </a>
+</section>
+
+
+    <section id="icontato" class="secao contato">
+        <h2>Fale Conosco</h2>
+        <p>
+            Entre em contato com nossa equipe
+            para mais informações.
+        </p>
+        <p>WhatsApp:.</p>
+    </section>
+</main>
+
+<footer>
+    <p>Alternativa Ferragens & CIA</p>
+    <p>Projeto acadêmico de desenvolvimento web.</p>
+</footer>
 
 </body>
 </html>

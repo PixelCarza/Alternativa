@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #242424;
+}
+
+.conteudo-site {
+    min-height: 100vh;
+    background: linear-gradient(
+        115deg,
+        #292929 0%,
+        #555 55%,
+        #777 100%
+    );
+}
+
+header {
+    padding: 16px 4%;
+}
+
+/* CABEÇALHO CINZA COM BORDA VERMELHA */
+.cabecalho {
+    min-height: 88px;
+    padding: 15px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background: rgba(65, 65, 65, 0.94);
+    border-bottom: 4px solid #c71927;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* LOGO DA ALTERNATIVA */
+.cabecalho .logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #c71927;
+    background-color: white;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* MENU */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 13px 16px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: #c71927;
+    color: white;
+    outline: none;
+}
+
+.grid-principal {
+    min-height: calc(100vh - 125px);
+}
+
+
+@media (max-width: 800px) {
+    .cabecalho {
+        flex-direction: column;
+        padding: 20px 12px;
+    }
+
+    .cabecalho .logo {
+        width: 160px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
